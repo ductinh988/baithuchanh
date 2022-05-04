@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 100%;
+            height: 200px;
+            background-color: black;
+        }
+        img {
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .box1::before {
+            display: block;
+            content: "";
+            width: 50px;
+            height: 50px;
+            background-color:red;
+        }
+        .box1::after {
+            display: block;
+            content: "";
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            opacity: 0;
+        }
+
+        a:visited {
+            color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box1">
+        
+    </div>
+    <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">link</a>
+    <a href="https://github.com/ductinh988/DeMoNetCore/issues/new"> link 2</a>
+
+</body>
+</html>

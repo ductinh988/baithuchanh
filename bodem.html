@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            counter-reset: xephang;
+        }
+
+        h1 {
+            counter-reset: sub;
+        }
+
+        h1::before {
+            counter-increment: xephang;
+            content: "Mục" counter(xephang) ". ";
+        }
+
+        h2::before {
+            counter-increment: sub;
+            content: "Mục" counter(xephang) " ." counter(sub) " ";
+        }
+
+        #demo {
+            color: red;
+        }
+
+        .text {
+            color: green;
+        }
+
+        p {
+            color: violet !important;
+            font-size: 50px !important;
+        }
+
+        #abc {
+            border: 2px solid red;
+            background-color: yellow;
+            width: calc(100% / 3)
+        }
+
+        #navlist {
+            position: relative;
+        }
+
+        #navlist li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+            top: 0;
+        }
+
+        #navlist li,
+        #navlist a {
+            height: 44px;
+            display: block;
+        }
+
+        #home {
+            left: 0px;
+            width: 46px;
+            background: url('https://user-images.githubusercontent.com/89244324/165659216-6eaa4de0-fb94-4709-b1ba-8051b421966c.gif') 0 0;
+        }
+
+        #prev {
+            left: 63px;
+            width: 43px;
+            background: url('https://user-images.githubusercontent.com/89244324/165659216-6eaa4de0-fb94-4709-b1ba-8051b421966c.gif') -47px 0;
+        }
+
+        #next {
+            left: 129px;
+            width: 43px;
+            background: url('https://user-images.githubusercontent.com/89244324/165659216-6eaa4de0-fb94-4709-b1ba-8051b421966c.gif') -91px 0;
+        }
+        .doanvan {
+            width: 500px;
+            height: 50px;
+            border: 2px solid red;
+            margin-top: 100px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .doanvan:hover {
+            overflow: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Using CSS Counters</h1>
+    <h2>HTML Tutorial</h2>
+    <h2>CSS Tutorial</h2>
+    <h2>JavaScript Tutorial</h2>
+    <h2>Python Tutorial</h2>
+    <h2>SQL Tutorial</h2>
+
+    <h1>HTML/CSS Tutorials</h1>
+    <h2>HTML</h2>
+    <h2>CSS</h2>
+    <h2>Bootstrap</h2>
+    <h2>W3.CSS</h2>
+
+    <h1>Scripting Tutorials</h1>
+    <h2>JavaScript</h2>
+    <h2>jQuery</h2>
+    <h2>React</h2>
+
+    <h1>Programming Tutorials</h1>
+    <h2>Python</h2>
+    <h2>Java</h2>
+    <h2>C++</h2>
+    <p id="demo" class="test" style="color: blue;">Hello World!</p>
+    <div id="abc">demo </div>
+    <h3>demo sprite</h3>
+    <ul id="navlist">
+        <li id="home"><a href="https://www.youtube.com/"></a></li>
+        <li id="prev"><a href="https://www.w3schools.com/css/css_image_sprites.asp"></a></li>
+        <li id="next"><a href="https://coccoc.com/"></a></li>
+    </ul>
+    <p class="doanvan">Khi sử dụng thuộc opacitytính để thêm độ trong suốt vào nền của một phần tử, tất cả các phần tử con của nó sẽ kế thừa cùng một độ trong suốt. Điều này có thể làm cho văn bản bên trong một phần tử hoàn toàn trong suốt khó đọc:</p>
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            width: 100%;
+            list-style-type: none;
+            background-color: black;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        li {
+            display: inline-block;
+            border-right: 1px solid rgba(185, 185, 183, 0.867);
+        }
+
+        li a {
+            color: white;
+        }
+
+        li a {
+            display: block;
+            /* color: white; */
+            text-decoration: none;
+            padding: 16px 18px;
+            text-align: center;
+        }
+
+        .c1 {
+            display: block;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: red;
+        }
+
+        li.b1 {
+            display: inline-block;
+        }
+
+        .b2 {
+            background-color: white;
+            display: none;
+            min-width: 160px;
+            position: absolute;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .b1:hover .b2 {
+            display: block;
+
+        }
+
+        .b2 a {
+            color: black;
+            text-align: left;
+        }
+
+        .ten {
+            text-align: center;
+            padding: 15px;
+        }
+
+
+
+        .c1:hover {
+            border: 1px solid black;
+        }
+
+        /* .c1 {
+            margin: 5px;
+            width: 180px;
+            display: inline-block;
+            width: 24.99999%;
+        } */
+
+        /* .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        } */
+        div.c1 {
+            margin: 5px;
+            border: 1px solid #ccc;
+            display: inline-block;
+            width: 24%;
+
+        }
+
+        div.c1 img {
+            width: 100%;
+            max-height: 300px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+       
+        .ten.a1 {
+            color: red;
+        }
+
+        .ten.a2 {
+            color: blue;
+        }
+
+        .ten.a3 {
+            color: orange;
+        }
+
+        .ten.a4 {
+            color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#menu"> menu </a></li>
+        <li><a href="#ao"> ao </a></li>
+        <li class="b1"><a class="h1" href="#quan"> quan </a>
+            <div class="b2">
+                <a href="#link 1">link 1</a>
+                <a href="#link 2">link 2</a>
+                <a href="#link 3">link 3</a>
+            </div>
+        </li>
+    </ul>
+    <h2>Responsive Image Gallery</h2>
+    <h4>Resize the browser window to see the effect.</h4>
+
+    <div class="to">
+        <div class="c1">
+            <div class="anh">
+                <a href="https://user-images.githubusercontent.com/89244324/165266183-700cc574-a78c-4158-abce-175f47684278.jpeg"
+                    target="_blank">
+                    <img src="https://user-images.githubusercontent.com/89244324/165266183-700cc574-a78c-4158-abce-175f47684278.jpeg"
+                        alt="ảnh 1" width="600" height="400"></a>
+            </div>
+            <div class="ten a1">ảnh hoàng hôn</div>
+        </div>
+        <div class="c1">
+            <div class="anh">
+                <a href="https://user-images.githubusercontent.com/89244324/165266813-4632c273-7b04-4edc-ae1d-cf78ae79cf12.gif"
+                    target="_blank">
+                    <img src="https://user-images.githubusercontent.com/89244324/165266813-4632c273-7b04-4edc-ae1d-cf78ae79cf12.gif"
+                        alt="ảnh 2" width="600" height="400">
+                </a>
+            </div>
+            <div class="ten a2">ảnh bóng đèn sáng</div>
+        </div>
+        <div class="c1">
+            <div class="anh">
+                <a href="https://user-images.githubusercontent.com/89244324/165267035-957eeab8-9efa-4920-bc23-40130b6459f0.jpg"
+                    target="_blank">
+                    <img src="https://user-images.githubusercontent.com/89244324/165267035-957eeab8-9efa-4920-bc23-40130b6459f0.jpg"
+                        alt="ảnh 3" width="600" height="400">
+                </a>
+            </div>
+            <div class="ten a3">ảnh laptop</div>
+        </div>
+        <div class="c1">
+            <div class="anh">
+                <a
+                    href="https://user-images.githubusercontent.com/89244324/165267408-adfadf53-db4c-4388-a96a-92f602d415d9.jpg">
+                    <img src="https://user-images.githubusercontent.com/89244324/165267408-adfadf53-db4c-4388-a96a-92f602d415d9.jpg"
+                        alt="ảnh 4" width="600" height="400">
+                </a>
+            </div>
+            <div class="ten a4">ảnh bình minh</div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div style="padding:6px;">
+        <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than
+            700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images
+            side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+        <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+    </div>
+
+</body>
+
+</html>

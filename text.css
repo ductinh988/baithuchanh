@@ -1,0 +1,7 @@
+button {
+    background-color: rgb(255, 204, 0, 0.9);
+    outline-style: solid;
+}
+button:hover {
+    background-color: #333;
+}

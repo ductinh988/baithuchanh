@@ -1,0 +1,54 @@
+.p1 {
+    margin: 20px;
+    border: 2px dotted red;
+    outline: 2px solid black;
+    outline-offset: 15px;
+    border-radius: 5px;
+}
+.p2 {
+    width: 200px;
+    height: 300px;
+    text-align: justify;
+}
+.p3 {
+    direction: rtl;
+  unicode-bidi: bidi-override;
+}
+.h2a {
+    text-decoration-line: overline underline line-through;
+}
+/* Background Attachment (tệp đính kèm nền) */
+body {
+    background-image: url(https://user-images.githubusercontent.com/89244324/164419959-a48f56c2-a948-4d1e-9b6c-8460e9a815a0.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed; /*hình nền đứng yên khi ta cuộn trang*/
+}
+/* CSS Text Shadow (hiệu ứng bóng chữ) */
+.h1a {
+    text-shadow: 2px 2px 5px red; /* 2px bóng ngang, bóng dọc 2px, hiệu ứng mờ vào bóng 5px*/
+}
+/* Bóng chữ với ánh sáng neon màu đỏ và xanh lam: */
+.h1b {
+    color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+h3 {
+    height: 40px;
+    width: 60px;
+    padding: 10px;
+    outline-offset: 15px;
+    outline: 2px solid red;
+    border: 2px solid blue;
+}
+.paddingTest {
+    width: 104px;
+    height: 40px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    margin: 70px;
+    
+}

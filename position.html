@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .a {
+            background-color: pink;
+            width: 300px;
+            height: 300px;
+            z-index: -1;
+            text-align: center;
+
+
+        } */
+
+        .a {
+            background-color: pink;
+            width: 300px;
+            height: 300px;
+            margin: auto;
+        }
+
+        img {
+            position: relative;
+            left: 0;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        div {
+            border: 2px solid red;
+            /* margin: 150px; */
+        }
+
+        .img1 {
+            float: right;
+            padding: 5px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .right {
+            position: absolute;
+            right: 0px;
+            width: 300px;
+            border: 2px solid green;
+        }
+
+        /* ._sangphaifloat {
+                float: right;
+                width: 300px;
+                border: 2px solid green;
+        } */
+        .candocgiua {
+            padding: 70px 0;
+            border: 2px solid green;
+        }
+
+        a :link {
+            color: red;
+        }
+
+        a :visited {
+            color: blue;
+        }
+
+        a:hover {
+            color: yellow;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        .p1 {
+            width: 100px;
+            overflow: hidden;
+        }
+
+        div.ex1 {
+            width: 800px;
+            margin: auto;
+            border: 3px solid #73AD21;
+        }
+
+        div.ex2 {
+            max-width: 800px;
+            margin: auto;
+            border: 3px solid #73AD21;
+        }
+
+        .h11 {
+            position: relative;
+            top: 100px;
+        }
+
+        .box {
+            width: 100%;
+            height: 100px;
+            background-color: pink;
+            margin-top: 50px;
+            position: relative;
+        }
+
+        .box-child {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 0;
+            background-color: aquamarine;
+            bottom: 0;
+        }
+
+        .fixed {
+            width: 100%;
+            height: 30px;
+            background-color: black;
+            border: none;
+            position: fixed;
+            top: 0;
+        }
+
+        .p1 {
+            width: 100px;
+            height: 30px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .a3 {
+            margin-top: 40px;
+
+        }
+
+        .a1 {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+        }
+
+        .a2 {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+        }
+
+        .a10 {
+            width: 100%;
+            height: 200px;
+            margin-top: 30px;
+            background-color: #a5f1d7;
+
+        }
+
+        .a10::before {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+
+        .a10::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: violet;
+        }
+
+        .tg1::first-letter {
+            font-size: 70px;
+            color: red;
+        }
+
+        .p2::first-line {
+            font-size: 70px;
+            color: #3399CC;
+        }
+
+        .c {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #c3b9b9;
+            width: 200px;
+            /* height: 100%;
+            position: fixed;
+            overflow: auto; */
+            
+        }
+
+        .d {
+            border: none;
+        }
+
+        li a.active {
+            background-color: #04AA6D;
+            color: white;
+           
+        }
+
+        li a {
+            display: block;
+            padding: 8px 16px;
+            color: #000;
+            text-decoration: none;
+            text-align: center;
+           
+        }
+
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <h1 class="a9">bài thực hành</h1>
+        <img src="https://user-images.githubusercontent.com/89244324/165020278-2889d658-a266-4c93-8f2a-2edd2c9620ce.png"
+            alt="ảnh đẹp không">
+
+    </div>
+    <div class="clearfix">
+        <img class="img1"
+            src="https://user-images.githubusercontent.com/89244324/165034960-cd9aa2b7-de4b-4525-8fa3-f3479aab76c7.jpeg"
+            alt="ảnh text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+    <h2>inline-block</h2>
+
+    <div class="right">
+        <p>hà nội 26 phố phường</p>
+    </div>
+
+    <!-- <div class="_sangphaifloat">
+        <p>cho tôi sang bên phải</p>
+    </div> -->
+    <div class="candocgiua">
+        <p>tôi được căn theo chiều dọc giữa</p>
+    </div>
+
+    <div style="margin:50px;">
+        <h2>pseudo-classes</h2>
+        <a href="https://www.youtube.com/watch?v=zEJiYc-SvWs">ấn vào đây</a>
+    </div>
+
+    <div class="ex1">This div element has width: 500px;</div>
+    <br>
+
+    <div class="ex2">This div element has max-width: 500px;</div>
+
+    <div class="box">
+        <div class="box-child">
+        </div>
+    </div>
+
+    <div class="fixed"></div>
+
+    <h1 class="h11">position</h1>
+    <ul>
+        <li>static</li>
+        <li>relative</li>
+        <li>flex</li>
+        <li>absolute</li>
+        <li>sticky</li>
+    </ul>
+    <div class="p1">
+        <p>
+            So với display: inline, sự khác biệt chính là display: inline-blockcho phép thiết lập chiều rộng và chiều
+            cao trên phần tử.
+        </p>
+    </div>
+    <div class="a3">
+        <div class="a1">xin chào</div>
+        <div class="a2">chào bạn</div>
+    </div>
+    <div class="a10">
+    </div>
+    <h1 class="tg1">xin chào thế giới</h1>
+    <p class="p2">Bộ chọn Anh chị. em kế cận (+): Bộ chọn anh chị em kế cận được sử dụng để chọn một phần tử nằm ngay
+        sau một phần tử cụ thể khác.</p>
+    <div class="d">
+        <ul class="c">
+            <li><a class="active" href="#">mennu</a> </li>
+            <li><a href="#"> trang chủ</a></li>
+            <li><a href="#"> khách hàng</a></li>
+            <li><a href="#"> nhân viên</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

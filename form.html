@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .formnen {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border: 5px;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        .label {
+            width: 25%;
+            display: inline-block;
+            margin-top: 6px;
+           
+        }
+
+        .input {
+            width: 74%;
+            display: inline-block;
+            margin-top: 6px;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        input[type=summit] {
+            float: right;
+            background-color: #04AA6D;
+            padding: 12px 20px;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+        }
+
+        input[type=summit]:hover {
+            background-color: #45a049;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media only screen and (max-width: 1000px) {
+            .label, .input, input[type=summit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Responsive Form</h2>
+    <p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack
+        on top of each other instead of next to each other.</p>
+    <div class="formnen">
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="label">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="input">
+                    <input type="text" id="fname" name="firstname" placeholder="your name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="input">
+                    <input type="text" id="lname" name="lastname" placeholder="your last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label for="coutry">Coutry</label>
+                </div>
+                <div class="input">
+                    <select name="coutry" id="coutry">
+                        <option value="Australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="label">
+                    <label for="Subject">Subject</label>
+                </div>
+                <div class="input">
+                    <textarea name="Subject" id="Subject" style="height:200px"
+                        placeholder="Write something.."></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <input type="summit" value="Summit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

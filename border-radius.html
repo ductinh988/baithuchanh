@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #rcorners1 {
+            width: 200px;
+            height: 150px;
+            background-color: #73ad21;
+            border-radius: 15px 50px 30px 5px;
+            padding: 50px;
+        }
+
+        #rcorners2 {
+            width: 200px;
+            height: 150px;
+            background-color: #73ad21;
+            border-radius: 15px 50px 30px;
+            padding: 50px;
+        }
+
+        #rcorners3 {
+            width: 200px;
+            height: 150px;
+            background-color: #73ad21;
+            border-radius: 15px 50px;
+            padding: 50px;
+        }
+
+        #rcorners4 {
+            width: 200px;
+            height: 150px;
+            background-color: #73ad21;
+            border-radius: 15px;
+            padding: 50px;
+        }
+
+        #rcorners5 {
+            width: 200px;
+            height: 150px;
+            background-color: #73ad21;
+            border-radius: 50px / 15px;
+            padding: 50px;
+        }
+
+        #rcorners6 {
+            width: 200px;
+            height: 150px;
+            background-color: #73ad21;
+            border-radius: 15px / 50px;
+            padding: 50px;
+        }
+
+        #rcorners7 {
+            border: 50px solid transparent;
+            width: 200px;
+            height: 150px;
+            background-color: #73ad21;
+            border-image: url(https://user-images.githubusercontent.com/89244324/165669688-fa378e46-f9fa-491c-b21d-71b73bbd0c9a.png) 20% stretch;
+            padding: 50px;
+        }
+
+        #example1 {
+            background: url('https://user-images.githubusercontent.com/89244324/165671116-74f87a32-7a5a-4f31-93fd-ab008c14d579.png') right bottom no-repeat, url('https://user-images.githubusercontent.com/89244324/165672709-9f42444a-a54f-4302-b784-6e5624d27ca5.jpg') left top repeat;
+            background-size: 50px, 130px, auto;
+            padding: 50px;
+        }
+
+        body {
+            color: black;
+        }
+
+        .mau {
+            background-color: currentColor;
+        }
+
+        .maucon {
+            color: pink;
+        }
+
+        #grad1 {
+            height: 200px;
+            /* background-color: red; */
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(to right, #00e5ff, yellow);
+        }
+        #grad2 {
+            height: 200px;
+            /* background-color: red; */
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+            margin-top: 30px;
+        }
+        #grad3 {
+            margin-top: 20px;
+            height: 200px;
+            width: 200px;
+            background-image: radial-gradient(#00e5ff,yellow,rgb(10, 3, 4));
+        }
+        #grad4 {
+            margin-top: 20px;
+            height: 400px;
+            width: 400px;
+            background-image: radial-gradient(rgb(8, 6, 12) 5%, #f7f7f7 15%, rgb(6, 5, 5) 50%)
+        }
+        #grad5 {
+            width: 200px;
+            height: 200px;
+            background-image: radial-gradient(closest-side at 60% 55%, #33ff00, yellow, #42f6f3 );
+        }
+        #grad6 {
+            width: 200px;
+            height: 200px;
+            background-image: repeating-radial-gradient(rgb(254, 4, 4), yellow 10%, rgb(29, 209, 23) 15%)
+        }
+        .color {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-image: conic-gradient(red, yellow, green);
+        }
+        .color1 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin:auto;
+            display: inline-block;
+            background-image: repeating-conic-gradient(rgb(126, 238, 238) 10%, yellow 20%);
+        }
+        .color2 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: auto;
+            background-image: repeating-conic-gradient(rgb(126, 238, 238) 10%, yellow 20%, pink 30%);
+        }
+        .shadow {
+            color: white;
+            text-shadow: 1px 1px 3px black, 1px 1px 25px blue, 1px 1px 25px darkblue;
+        }
+        .shadow1 {
+            color: coral;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+        .shadow2 {
+            width: 200px;
+            height: 200px;
+            background-color: coral;
+            box-shadow: 10px 10px 10px black;
+        }
+        .anh {
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+           text-align: center;
+           box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .ab {
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>Four values - border-radius: 15px 50px 30px 5px:</p>
+    <p id="rcorners1"></p>
+
+    <p>Three values - border-radius: 15px 50px 30px:</p>
+    <p id="rcorners2"></p>
+
+    <p>Two values - border-radius: 15px 50px:</p>
+    <p id="rcorners3"> </p>
+
+    <p>One value - border-radius: 15px:</p>
+    <p id="rcorners4"></p>
+    <p>One value - border-radius: 15px:</p>
+    <p id="rcorners5"></p>
+    <p>One value - border-radius: 15px:</p>
+    <p id="rcorners6"></p>
+    <p>One value - border-radius: 15px:</p>
+    <p id="rcorners7">xin chào</p>
+    <div id="example1">
+        <h1>Lorem Ipsum Dolor</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat.</p>
+    </div>
+    <div class="mau">
+        <p class="maucon">This div's border color and shadow color is set to the current color value of the body
+            element.</p>
+    </div>
+    <div id="grad1"></div>
+    <div id="grad2"></div>
+    <div id="grad3"></div>
+    <div id="grad4"></div>
+    <div id="grad5"></div>
+    <div id="grad6"></div>
+    <h2>Conic Gradient: Ba màu</h2>
+    <div class="color"></div>
+    <h2>Lặp lại một Gradient Conic</h2>
+    <div class="color1"></div>
+    <h2>Lặp lại một Gradient Conic</h2>
+    <div class="color2"></div>
+
+    <h1 class="shadow">hiệu ứng bóng văn bản</h1>
+    <h1 class="shadow1">Border around text!</h1>
+    <div class="shadow2">hiệu ứng bóng hộp</div>
+    <div class="anh">
+        <img class="ab" src="https://user-images.githubusercontent.com/89244324/165710780-6676e553-2092-4b3c-9f2e-491a5c4a3270.jpg" alt="ảnh đồng quê">
+        <div style="padding:10px">
+            <p>ảnh có hiệu ưng bóng</p>
+        </div>
+    </div>
+</body>
+
+</html>

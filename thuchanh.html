@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: #E5E5E5;
+            font-family: 'Roboto';
+            color: #8C8C8C;
+        }
+
+        .cot {
+            width: 260px;
+            height: 2247px;
+            background-color: white;
+
+
+        }
+
+        .muc1 {
+            display: block;
+            position: static;
+            top: 0;
+            left: 0;
+            height: 106px;
+        }
+
+        .text1 {
+            float: left;
+        }
+
+        .text1 img {
+            width: 44px;
+            height: 48px;
+            margin-top: 24px;
+            margin-left: 16px;
+        }
+
+        .text2 {
+            display: block;
+            width: 184px;
+            float: right;
+        }
+
+        .text2 h3 {
+            height: 24px;
+            margin: 24px 0 0 0;
+            text-align: left;
+            color: black;
+        }
+
+        .text2 p {
+            line-height: 16px;
+            margin-top: 10px;
+            color: #8C8C8C;
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        .muc2 {
+            height: 48px;
+
+        }
+
+        .text3 {
+            float: left;
+        }
+
+        .text3 img {
+            width: 18px;
+            height: 18px;
+            margin: 15px 0 15px 19px;
+        }
+
+        .text4 a {
+
+            width: 124px;
+            height: 20px;
+            float: right;
+            margin: 18px 88px 14px 0;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        a {
+            color: #8C8C8C;
+            text-decoration: none;
+        }
+
+        .list {
+            height: 48px;
+            margin-top: 8px;
+        }
+
+        .list.item1 img {
+            width: 20px;
+            height: 20px;
+            margin: 14px 0 14px 18px;
+        }
+
+        .list.item1 a {
+            width: 164px;
+            height: 20px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 14px 48px 14px 10px;
+        }
+
+        .list.item1 .anh1 {
+            width: 12px;
+            height: 7.41px;
+            float: right;
+            margin: 20px
+        }
+
+        .list.item2 img {
+            width: 20px;
+            height: 20px;
+            margin: 14px 0 14px 18px;
+        }
+
+        .list.item2 a {
+            width: 170px;
+            height: 20px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 14px 30px 14px 10.01px;
+        }
+
+        .list.item2 .anh2 {
+            width: 12px;
+            height: 7.41px;
+            float: right;
+            margin: 20.59px 20px 20px 0;
+        }
+
+        .list.item3 img {
+            width: 18px;
+            height: 20px;
+            margin: 13px 0 15px 19px;
+        }
+
+        .list.item3 a {
+            width: 170px;
+            height: 20px;
+
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 14px 30px 14px 9.50px;
+        }
+
+        .list.item3 .anh3 {
+            width: 12px;
+            height: 7.41px;
+            float: right;
+            margin: 20.59px 20px 20px 0;
+        }
+
+        .list.item4 img {
+            width: 18.68px;
+            height: 19.2px;
+            margin: 14.4px 0 14.4px 18.66px;
+        }
+
+        .list.item4 a {
+            width: 164px;
+            height: 20px;
+
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 14px 48px 14px 10.66px;
+        }
+
+        .list.item4 .anh4 {
+            width: 12px;
+            height: 7.41px;
+            float: right;
+            margin: 20.59px 20px 20px 0;
+        }
+
+        .list.item1 {
+            display: flex;
+        }
+
+        .list.item2 {
+            display: flex;
+        }
+
+        .list.item3 {
+            display: flex;
+        }
+
+        .list.item4 {
+            display: flex;
+        }
+
+        .muc2:hover,
+        .muc2 a:hover {
+            background-color: #EDF3FF;
+        }
+
+        .list.item1:hover,
+        .list.item1 a:hover {
+            background-color: #EDF3FF;
+            color: #276EFF;
+
+        }
+
+        .list.item2:hover,
+        .list.item2 a:hover {
+            background-color: #EDF3FF;
+            color: #276EFF;
+
+        }
+
+        .list.item3:hover,
+        .list.item3 a:hover {
+            background-color: #EDF3FF;
+            color: #276EFF;
+
+        }
+
+        .list.item4:hover,
+        .list.item4 a:hover {
+            background-color: #EDF3FF;
+            color: #276EFF;
+
+        }
+
+        .table .navba {
+            /* background-color: #f9f9f9;
+            min-width: 260px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            
+            position: absolute;
+            border: 1px solid white; */
+            display: none;
+
+        }
+        .table:hover .navba {
+            display: block;
+        }
+        
+        .table .navba .a1 {
+            width: 260px;
+            height: 48px;
+            display: block;
+            text-align: center;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+        } 
+        .table .navba .a1:hover {
+            background-color:#EDF3FF;
+            color: #276EFF;
+        }
+        .table .navba .a1.a {
+            width: 142px;
+            height: 20px;
+            padding: 14px 70px 14px 48px;
+        }
+        .table .navba .a1.b {
+            width: 142px;
+            height: 20px;
+            padding: 14px 70px 14px 48px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="cot">
+        <div class="muc1">
+
+            <div class="text1">
+                <img src="https://user-images.githubusercontent.com/89244324/165864212-de70cad9-a066-4497-aacf-f07fb5f00d7e.png"
+                    alt="logo">
+            </div>
+            <div class="text2">
+                <h3>CXVIEW</h3>
+                <p>Smart retail solution</p>
+            </div>
+        </div>
+        <div class="muc2">
+            <div class="text3">
+                <img src="https://user-images.githubusercontent.com/89244324/165864505-b02afdb5-719a-47fa-8510-60a096b324b4.png"
+                    alt="anh 1">
+            </div>
+            <div class="text4">
+                <a href="#">Dash board</a>
+            </div>
+        </div>
+        <div class="muc3">
+            <div class="table">
+
+                <div class="list item1">
+
+                    <img src="https://user-images.githubusercontent.com/89244324/165864872-9ef7275e-e38c-43d8-bf1b-7627ad3fc1ca.png"
+                        alt="anh 2">
+
+                    <a href="#">Analysis</a>
+                    <img class="anh1"
+                        src="https://user-images.githubusercontent.com/89244324/165884370-eae81b17-a692-41d1-a19d-1f104495f528.png"
+                        alt="icon1">
+                </div>
+                <div class="navba">
+                    <a class="a1 a" href="#">Report</a>
+                    <a class="a1 b" href="#">Zone Analysis</a>
+                </div>
+            </div>
+            <div class="list item2">
+
+                <img src="https://user-images.githubusercontent.com/89244324/165871081-dcf61d3f-ffbf-447e-8dc0-e40ca54eebd0.png"
+                    alt="anh 3">
+                <a href="#">Custumer Management</a>
+                <img class="anh2"
+                    src="https://user-images.githubusercontent.com/89244324/165884446-3edffc31-3af5-4a39-8253-6c85752d452d.png"
+                    alt="icon2">
+            </div>
+            <div class="list item3">
+                <img src="https://user-images.githubusercontent.com/89244324/165871233-47b4b7e0-135c-4a01-9372-de50a848cffe.png"
+                    alt="anh 4">
+                <a href="#">Employee Management</a>
+                <img class="anh3"
+                    src="https://user-images.githubusercontent.com/89244324/165884446-3edffc31-3af5-4a39-8253-6c85752d452d.png"
+                    alt="icon3">
+            </div>
+            <div class="list item4">
+                <img src="https://user-images.githubusercontent.com/89244324/165871272-31779e49-c36f-42c5-97b7-474dd94ec431.png"
+                    alt="anh 5">
+                <a href="#">Setting</a>
+                <img class="anh4"
+                    src="https://user-images.githubusercontent.com/89244324/165884446-3edffc31-3af5-4a39-8253-6c85752d452d.png"
+                    alt="icon4">
+            </div>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

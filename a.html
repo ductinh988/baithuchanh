@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <style>
+        
+        td {
+            text-align: center;
+        }
+
+        th,
+        td {
+            border: 2px solid black;
+            border-radius: 10px;
+            /* background-color: aqua; */
+            padding: 30px;
+
+        }
+
+        table {
+            border-spacing: 30px;
+        }
+
+        /* p {
+            border: 2px solid black;
+        } */
+
+        .text {
+            color: violet;
+            font-size: 20px;
+        }
+        /* p {
+            background-image: url('https://user-images.githubusercontent.com/89244324/163707282-f273153e-1fd6-4095-a566-14c2ee8f1f50.jpg');
+        } */
+    </style>
+        <p>
+            You can specify background images<br>
+            for any visible HTML element.<br>
+            In this example, the background image<br>
+            is specified for a p element.<br>
+            By default, the background-image<br>
+            will repeat itself in the direction(s)<br>
+            where it is smaller than the element<br>
+            where it is specified. (Try resizing the<br>
+            browser window to see how the<br>
+            background image behaves.
+        </p>
+    </map>
+    <table style="width: 100%">
+        <caption>bảng tên</caption>
+        <colgroup>
+            <col span="1" style="background-color: pink">
+        </colgroup>
+        <tr>
+            <th style="width: 70%">vu</th>
+            <th>van</th>
+            <th>duc</th>
+        </tr>
+        <tr style="height: 200px">
+            <td colspan="2">123</td>
+            <td>567</td>
+            <td>890</td>
+        </tr>
+        <tr>
+            <td>abc</td>
+            <td>def</td>
+            <td>ghi</td>
+        </tr>
+    </table>
+    <!-- Các mục trong danh sách sẽ được đánh dấu bằng dấu đầu dòng (vòng tròn nhỏ màu đen)  -->
+    <ul>
+        <li>vu duc</li>
+        <li>tran anh</li>
+        <li>phạm đồng</li>
+    </ul>
+    <!-- Một danh sách có thứ tự bắt đầu bằng <ol>thẻ. Mỗi mục danh sách bắt đầu bằng <li>thẻ -->
+    <ol>
+        <li>nguyễn trãi</li>
+        <li>nguyễn du</li>
+        <li>trần bình</li>
+        <li>phạm hùng</li>
+    </ol>
+    <!-- Thẻ <dl>xác định danh sách mô tả, <dt>thẻ xác định thuật ngữ (tên) và <dd> thẻ mô tả từng thuật ngữ: -->
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+
+    <ul style="list-style-type:disc;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <ol type="A">
+        <li>nguyễn trãi</li>
+        <li>nguyễn du</li>
+        <li>trần bình</li>
+        <li>phạm hùng</li>
+    </ol>
+    <ol>
+        <li>nguyễn trãi</li>
+        <li>nguyễn du</li>
+        <ol>
+            <li>trần bình</li>
+        </ol>
+        <li>phạm hùng</li>
+    </ol>
+    <p><span>Ở <p>trận </p>đầu tiên của bảng F,</span> Shandong Taishan thất bại 0-7 trước Daegu, đội xếp hạng 3 giải vô địch
+        quốc gia Hàn Quốc mùa 2021. Trong khi đó, Guangzhou thua 0-5 trước Johor Darul Ta'zim của Malaysia tại bảng I.
+    </p>
+    <span class="text">Sina cho biết thất bại của Shangdong Taishan đã tái lập trận thua đậm nhất của một đội bóng Trung
+        Quốc tại AFC Champions League. Mùa trước, đội trẻ của Beijing Guoan cũng thua với tỷ số 0-7 trước Kawasaki
+        Frontale ở vòng bảng.</span>
+    <!-- <iframe src="https://www.bongda.com.vn/hai-doi-bong-trung-quoc-tham-bai-tai-afc-champions-league-d636712.html" name="iframe_a" height="200" width="300" title="Iframe Example"></iframe>
+<p>
+    <a href="https://www.youtube.com/" target="iframe_a">link đây thi</a>
+</p> -->
+    <div>
+        <iframe
+            src="https://user-images.githubusercontent.com/89244324/163666797-c5c06b81-c5a9-488b-9195-99d8f6912933.jpg"
+            name="iframe_a" height="300px" width="250px" title="Iframe Example"></iframe>
+
+        <p><a href="https://www.bongda.com.vn/hai-doi-bong-trung-quoc-tham-bai-tai-afc-champions-league-d636712.html"
+                target="iframe_a">W3Schools.com</a></p>
+    </div>
+    <h1 id="demo"></h1>
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        document.getElementById("demo").style.fontSize = "25px";
+        document.getElementById("demo").style.color = "red";
+        document.getElementById("demo").style.backgroundColor = "yellow"; 
+    </script>
+    <script>
+        function light(sw) {
+            var pic;
+            if (sw == 0) {
+                pic = "pic_bulboff.gif"
+            } else {
+                pic = "pic_bulbon.gif"
+            }
+            document.getElementById('myImage').src = pic;
+        }
+    </script>
+    <img id="myImage"
+        src="https://user-images.githubusercontent.com/89244324/163667534-c3e210e0-214a-49c1-8b25-c65f7089d315.gif"
+        width="100" height="180">
+
+    <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+    <p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+        The image will float to the right of the text.</p>
+        
+        <p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+        The image will float to the left of the text.</p>
+</body>
+
+</html>
